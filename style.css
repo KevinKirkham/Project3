@@ -1,0 +1,35 @@
+p {
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Noto Sans Display', sans-serif;
+    text-align: center;
+}
+
+h4 {
+    text-align: center; 
+}
+
+.centerField {
+    text-align: center;
+}
+
+input [type="text"] {
+    text-align: center;
+}
+
+button {
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    background-color: maroon;
+    color: white;
+}
+
+.calculator {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-style: solid;
+    background-color: orangered;
+}

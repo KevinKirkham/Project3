@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Homework 3</title>
+
+        <script src="js/script.js"></script>
+        <style>
+            body {
+                background-color: maroon;
+            }
+        </style>
+
+        <!-- Link to style sheet -->
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- Link to favicon -->
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+
+        <!-- Link to Google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@300&display=swap" rel="stylesheet">
+
+        <!-- CSS information taken from W3Schools -->
+        <!-- Quadratic formula information from this video: https://www.youtube.com/watch?v=EeVqtpuMFOU&ab_channel=patrickJMT -->
+
+    </head>
+
+    <body>
+        <div class="calculator">
+
+            <h3>Calculate Force</h3>
+            <form action="index.html" id="force" method="POST">
+                
+                <div class="centerField">
+                    <label for="mass">Mass: </label>
+                    <input type="text" id="mass" placeholder="Mass..."><br>
+                </div>
+                
+                <div class="centerField">
+                    <label for="acceleration">Acceleration: </label>
+                    <input type="text" id="acceleration" placeholder="Acceleration..."><br>
+                </div>
+        
+                <div class="centerField">
+                    <br><button type="button" id="calcForce" onclick=calculateForce()>Calculate</button>
+                </div>
+
+                <hr>
+                <h4 id="ansTitle"></h4>
+                <p id="calculation"></p>
+        
+            </form>
+        </div>
+
+        <hr style="background-color:white; border-color: white;">
+
+        <div class="calculator">
+            
+            <h3>Displacement:</h3>
+            <form action="index.html" id="displacement" method="post">
+                
+                <div class="centerField">
+                    <label for="velocity">Initial Velocity:</label>
+                    <input type="text" id="velocity" placeholder="Initial velocity..."><br>
+                </div>
+        
+                
+                <div class="centerField">
+                    <label for="time">Time: </label>
+                    <input type="text" id="time" placeholder="Time..."><br>
+                </div>
+        
+                
+                <div class="centerField">
+                    <label for="acc">Acceleration: </label>
+                    <input type="text" id="acc" placeholder="Acceleration..."><br>
+                </div>
+
+                <div class="centerField">
+                  <br><button type="button" id="displaceCalc" onclick=calculateDisplacement()>Calculate</button>
+                </div>
+
+                <hr>
+                <h4 id="displaceAnsTitle"></h4>
+                <p id="displaceAns"></p>
+        
+            </form>
+        </div>
+
+        <hr style="background-color:white; border-color: white;">
+
+        <div class="calculator">
+            
+            <h3>Quadratic Equation:</h3>
+            <form action="index.html" id="quadraticEq" method="POST">
+                
+                <div class="centerField">
+                    <label for="a">a: </label>
+                    <input type="text" id="a" placeholder="a..."><br>
+                </div>
+                
+                <div class="centerField">
+                    <label for="b">b: </label>
+                    <input type="text" id="b" placeholder="b..."><br>
+                </div>
+                
+                <div class="centerField">
+                    <label for="c">c: </label>
+                    <input type="text" id="c" placeholder="c..."><br>
+                </div>
+
+                <div class="centerField">
+                    <br><button type="button" id="quadraticCalc" onclick=calculateQuadratic()>Calculate</button>
+                </div>
+
+                <hr>
+                <h4 id="quadEQansTitle"></h4>
+                <p id="quadEQans1"></p>
+                <p id="quadEQans2"></p>
+
+            </form>
+        </div>
+
+        <hr style="background-color:white; border-color: white;">
+
+        <div class="calculator">
+            
+            <h3>Annuity Stream</h3>
+            <form action="index.html" id="annuityStream" method="POST">
+
+                <div class="centerField">
+                    <label for="pmt">PMT:</label>
+                    <input type="text" id="pmt" placeholder="pmt..."><br>
+                </div>
+
+                <div class="centerField">
+                    <label for="r">r:</label>
+                    <input type="text" id="r" placeholder="r..."><br>
+                </div>
+
+                <div class="centerField">
+                    <label for="n">n:</label>
+                    <input type="text" id="n" placeholder="n..."><br>
+                </div>
+
+                <div class="centerField">
+                    <br><button type="button" id="annuityCalc" onclick=calculateAnnuityStream()>Calculate</button>
+                </div>
+
+                <hr>
+                <h4 id="annuitySreamTitle"></h4>
+                <p id="annuityStreamAns"></p>
+            
+            </form>
+        </div>
+
+        <footer style="color: white;">
+            Made with JavaScript, CSS, and HTML5.
+        </footer>
+        
+    </body>
+
+
+
+</html>
